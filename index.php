@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio Antonio Nicolau Batle</title>
+    <title>Portfolio Antonio Nicolau Batle - 2019 - FullStack </title>
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
@@ -29,6 +29,23 @@ tr:hover {
   background: black;
 color:white;
 }
+	    .header-links > a {
+		color:yellow;
+		    font-size:10pt;
+		    text-decoration:none;
+		    font-family:'Courier New', Courier,monospace;
+		    padding-left:2%;
+		    font-weight:700;
+	    }
+	    
+	    .header-links > .last-updated {
+		color: #8c8c8d;
+		    font-size:12pt;
+		    margin-right:10%;
+		    float:right;
+		    font-family:'Courier New', Courier,monospace;
+		    
+	    }
     </style>
 	<script>
 function startTime() {
@@ -50,6 +67,9 @@ function checkTime(i) {
 </head>
 
 <body onload="startTime()">
+	<div class="header-links">
+	<span class="last-updated"><?php echo "Last Modified:" .date("F d Y H:s.", getlastmod()); ?>   </span>
+	</div>
     <div id="mobile-menu-open" class="shadow-large">
         <i class="fa fa-bars" aria-hidden="true"></i>
     </div>
@@ -115,17 +135,16 @@ function checkTime(i) {
         <div id="lead-content">
             <h1 style="font-family:Helvetica;font-weight:350;">Antonio Nicolau Batle</h1>
             <h2 style="color:ghostwhite;">*** </h2>
-            <h2 style="color:ghostwhite;">Full Stack BackEnd & Frondend Webpages </h2>
-            <h2 style="color:ghostwhite;">Informático </h2>
-            <center><a href="index.html"><img
-                                    src="images/es.png"/></a><!-- 
+            <h1 style="color:ghostwhite;">Full Stack BackEnd & FrondEnd </h1>
+            <h2 style="color:ghostwhite;">· Informático · </h2>
+            <center><!-- 
 <a href="https://golden-tea.me/?ref=1055384&utf=es/GT_468x60_2"><img src="https://golden-tea.me/images/banners/es/GoldenTea_468x60_2.gif"/></a>
 <a href="https://golden-tea.me/?ref=1055384&utf=es/GT_468x60_2"><img src="images/bg_40_500.gif" style="width:468px;height:60px;"/></a>    </center>
       -->   <center>  <table style="border:2px solid lime;background:lightgrey;color:white;border-radius:5px;text-align:Center;"><tr>  <td ><h2 style="color:blueViolet;"> Full Stack BackEnd and FrondEnD</h2> </td></tr>
-            <tr><td ><h2 style="color:blueViolet;"> Asesoramiento Informático</h2></td></tr>
-            <tr><td ><h2 style="color:yellow;"> DevOps</h2></td></tr>
-            <tr><td ><h2 style="color:blueViolet;">Redes Informaticas</h2></td></tr>
-		    <tr><td ><h2 style="color:blueViolet;">And More</h2></td></tr>
+            <tr><td ><h4 style="color:blueViolet;"> Asesoramiento Informático</h4></td></tr>
+            <tr><td ><h4 style="color:blueViolet;"> DevOps </h4></td></tr>
+            <tr><td ><h4 style="color:blueViolet;">SysAdmin</h4></td></tr>
+		    <tr><td ><h4 style="color:blueViolet;">Reparaciónes</h4></td></tr>
 
           </table></center> 
             <!-- <a href="#" class="btn-rounded-white">Download Resume</a> -->
@@ -151,7 +170,7 @@ function checkTime(i) {
                 </div>
                 <div class="col-md-8">
                     <p>
-                        Hola, Me llamo Toni Nicolau Batle diseño y desarrollo páginas web, Me estoy especializando para ello, para pequeñas empresas o particulares, desde 0 , wordpress, drupal , páginas
+                        Hola, Me llamo Toni Nicolau diseño y desarrollo páginas web, Me estoy especializando para ello, para pequeñas empresas o particulares, desde 0 , wordpress, drupal , páginas
                       web a medida. También disponible para Asesoramiento Informático. Tienes el formulario de contacto al final de este Resumen.
                       </p>
                 </div>
