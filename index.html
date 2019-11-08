@@ -66,9 +66,10 @@ function checkTime(i) {
 </script>
 </head>
 
-<body onload="startTime()">
+<body onload="startTime() myFunction()">
 	<div class="header-links">
-	<span class="last-updated"><?php echo "Last Modified:" .date("F d Y H:s.", getlastmod()); ?>   </span>
+		<span class="last-updated" id="d"><script type="javascript">  function myFunction(){ var x= new Date(document.lastModified);
+			document.getElementById("d").innerHTML = x;</script></span>
 	</div>
     <div id="mobile-menu-open" class="shadow-large">
         <i class="fa fa-bars" aria-hidden="true"></i>
