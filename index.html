@@ -1,386 +1,285 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio Antonio Nicolau Batle - FullStack - </title>
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-    <style>
- #lead {
-background-image: url('https://github.com/anb00/FullStackanb/blob/master/images/wallhaven-55913.jpg');
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  margin: 0px 0px 0px 0px;
-  padding: 0px;
-  height: 100%;
-  color: #000;
-	    }
-    li:hover {
-      background: black;
-      color:white;
-    }
-a:hover {
-  background-color: black;
-  color: ghostwhite;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio Antonio Nicolau | FullStack - </title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+  <!-- Custom style -->
+  <link rel="stylesheet" href="css/style.css">
+ <!--  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+ <style type="text/css">
+ 	hr {
+    border-color: rgb(69, 150, 255);
+        border-top-color: rgb(69, 150, 255);
+        border-right-color: rgb(69, 150, 255);
+        border-bottom-color: rgb(69, 150, 255);
+        border-left-color: rgb(69, 150, 255);
+}table, th, td {
+    border-bottom: 1px solid #ddd;
+        border-bottom-color: rgb(221, 221, 221);
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+    color: white;
+    padding: 15px;
+        padding-top: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+    text-align: left;
+    min-width: 120px;
+    background-color: #141415;
 }
-td:hover {
-  background: black;
-  color:white;
+table {
+    border: 2px solid #ddd;
+        border-top-color: rgb(221, 221, 221);
+        border-top-style: solid;
+        border-top-width: 2px;
+        border-right-color: rgb(221, 221, 221);
+        border-right-style: solid;
+        border-right-width: 2px;
+        border-bottom-color: rgb(221, 221, 221);
+        border-bottom-style: solid;
+        border-bottom-width: 2px;
+        border-left-color: rgb(221, 221, 221);
+        border-left-style: solid;
+        border-left-width: 2px;
+        border-image-outset: 0;
+        border-image-repeat: stretch;
+        border-image-slice: 100%;
+        border-image-source: none;
+        border-image-width: 1;
+    border-collapse: collapse;
+    border-radius: 1em;
+        border-top-left-radius: 1em;
+        border-top-right-radius: 1em;
+        border-bottom-right-radius: 1em;
+        border-bottom-left-radius: 1em;
+    overflow: hidden;
+        overflow-x: hidden;
+        overflow-y: hidden;
 }
-tr:hover {
-  background: black;
-color:white;
+table {
+    background-color: transparent;
 }
-    </style>
-	<script>
-function startTime() {
-    var today = new Date();
-    var h = today.getHours();
-    var m = today.getMinutes();
-    var s = today.getSeconds();
-    m = checkTime(m);
-    s = checkTime(s);
-    document.getElementById('txt').innerHTML =
-    h + ":" + m + ":" + s;
-    var t = setTimeout(startTime, 500);
-}
-function checkTime(i) {
-    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-    return i;
-}
-</script>
+h3 {
+  color:#000;
+  font-family: Helvet;
+  }
+
+  p{
+    color: #000;
+  }
+  .god {
+    color:#000;
+  }
+ </style>
+
+
 </head>
 
-<body onload="startTime()">
-    <div id="mobile-menu-open" class="shadow-large">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-    </div>
-    <!-- End #mobile-menu-toggle -->
-    <header>
-        <div id="mobile-menu-close">
-            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
-        </div>
-        <ul id="menu" class="shadow" style="box-shadow:2px 3px 20px rgb(100,255,255)">
-		<!-- <li> <?php
-//$cuenta ="visitas.txt";
-//function contador($cuenta)
-//{
-//$fp=fopen($cuenta,rw);
-//$num = fget($fp,5);
-//$num +=1;
-//print "Número de visitas:";
-//echo "$num";
-//exec("rm -rf $cuenta);
-//exec( "echo $num > $cuenta");
-//}
-//if(!file_exists($cuenta))
-//{
-//exec("echo 1 > $cuenta");
-//}
-//contador($cuenta);
-?> 
-		</li> -->
-            <li>
-                <a href="#about" style="color:black;">Sobre Mí</a>
-            </li>
-            <li>
-                <a href="#experience" style="color:black;">Experiencia</a>
-            </li>
-            <li>
-                <a href="#education" style="color:black;">Educación</a>
-            </li>
-            <li>
-                <a href="#projects" style="color:black;">Proyectos</a>
-            </li>
-            <li>
-                <a href="#skills" style="color:black;">Habilidades</a>
-            </li>
-            <li>
-                <a href="#contact" style="color:black;">Contacto</a>
-            </li>
-		<li><div id="txt"></div></li>
-        </ul>
-    </header>
-    <header style="position:absolute;left:25%;">
-      <div id="mobile-menu-close">
-          <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+<body style="background-color: white;">
+  <!-- Fixed navbar -->
+  <nav class="navbar"><!-- navbar-inverse"-->
+    <div class="container " >
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        <a class="navbar-brand" href="index.html"><span class="text-danger"></span></a>
       </div>
-      <ul id="menu" class="shadow" style="box-shadow:2px 3px 20px rgb(100,255,255);position:absolute;left:75%;">
-<img src="images/es.png" style="width: 25px;height:18px;"/>
-<img src="images/en.png" style="width: 25px;height:18px;cursor:not-allowed;"/>
-<img src="images/de.png" style="width: 25px;height:18px;cursor:not-allowed;"/>
-</ul>
-    </header>
-    <!-- End header -->
-
-    <div id="lead">
-        <div id="lead-content">
-            <h2 style="font-family:Helvetica;font-weight:350;">Antonio Nicolau Batle</h2>
-            <h2 style="color:ghostwhite;">*** </h2>
-            <h2 style="color:ghostwhite;">Full Stack BackEnd & FrondEnd </h2>
-            <h2 style="color:ghostwhite;">Informático </h2>
-            <center><!-- 
-<a href="https://golden-tea.me/?ref=1055384&utf=es/GT_468x60_2"><img src="https://golden-tea.me/images/banners/es/GoldenTea_468x60_2.gif"/></a>
-<a href="https://golden-tea.me/?ref=1055384&utf=es/GT_468x60_2"><img src="images/bg_40_500.gif" style="width:468px;height:60px;"/></a>    </center>
-      -->   <center>  <table style="border:1px dooted;background:lightgrey;color:white;border-radius:5px;text-align:Center;"><tr>  <td ><h2 style="color:black;"> Full Stack Backend and FrondEnd</h2> </td></tr>
-            <tr><td ><h2 style="color:blueViolet;"> Asesoramiento Informático</h2></td></tr>
-            <tr><td ><h2 style="color:yellow;"> DevOps</h2></td></tr>
-            <tr><td ><h2 style="color:blueViolet;">Redes Inform&aacute;ticas</h2></td></tr>
-		    
-
-          </table></center> 
-            <!-- <a href="#" class="btn-rounded-white">Download Resume</a> -->
-        </div>
-        <!-- End #lead-content -->
-
-        <div id="lead-overlay"></div>
-
-        <div id="lead-down">
-            <span>
-                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-            </span>
-        </div>
-        <!-- End #lead-down -->
-    </div>
-    <!-- End #lead -->
-
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h2 class="heading">Sobre Mí</h2>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                        Hola, Me llamo Toni Nicolau Batle diseño y desarrollo páginas web, Me estoy especializando para ello, para pequeñas empresas o particulares, desde 0 , wordpress, drupal , páginas
-                      web a medida. También disponible para Asesoramiento Informático. Tienes el formulario de contacto al final de este Resumen.
-                      </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End #about -->
-
-    <div id="experience" class="background-alt">
-        <h2 class="heading">Experiencia Profesional</h2>
-        <div id="experience-timeline">
-            <div data-date="September 2015 – September 2016">
-                <h3>PC BOX</h3>
-                <h4>Vendedor ,Atención al Cliente</h4>
-                <p>
-                    Comprende las competencias de venta al público de componentes Informáticos así como la detección y sustitución de componentes y equipos informáticos
-			preparación de presupuesto, pedidos ,etc...
-                </p>
-            </div>
-
-             <div data-date="Agosto 2019 – Octubre 2019">
-                <h3>Sprinde SOLUCIONES INFORMÁTICAS Y DESARROLLO</h3>
-                <h4>-Técnico en sistemas Informáticos Y REdes -</h4>
-                <p>
-                    Funciones: Analizar redes informáticas para asimilar posibles fallos o mejoras, Solventar problemas de clientes externos , Montaje de redes cableadas y no cableadas
-			wifi, Cámaras de Seguridad, entre otras tareas Informáticas. -
-                </p>
-            </div>
-
-           <!-- <div data-date="September 2015 – September 2016">
-                <h3>Employer Name</h3>
-                <h4>Job Title</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                </p>
-            </div> -->
-        </div> 
-    </div>
-    <!-- End #experience -->
-
-    <div id="education">
-        <h2 class="heading">Educación</h2>
-        <div class="education-block">
-            <h3>Educación secundario</h3>
-            <span class="education-date">2001</span>
-            <h4>Colegio San Vicente de Paúl</h4>
-            <p>
-                Graduado en este centro. </p>
-        </div>
-        <!-- End .education-block -->
-
-        <div class="education-block">
-            <h3>Escuela Universitaria de Turismo Felipe Moreno</h3>
-            <span class="education-date">2005</span>
-            <h4>Mandos Intermedios Turísticos</h4>
-            <ul>
-                <li>
-                    Especialidad TCP (Tripulante de Cabina de Pasajeros)
-                </li>
-               
-            </ul>
-        </div>
-	       <div class="education-block">
-            <h3>IES Emili Darder</h3>
-            <span class="education-date">2015</span>
-            <h4>FP Grado Medio Sistemas Microinformáticos y Redes</h4>
-            <ul>
-                <li>
-                    Formación Profesional de Grado Medio
-                </li>
-               
-            </ul>
-        </div>
-	       <div class="education-block">
-            <h3>IES Emili Darder </h3>
-            <span class="education-date">2019</span>
-            <h4>FP Grado Superior</h4>
-            <ul>
-                <li>
-                   Administración de sistemas informáticos y redes.
-                </li>
-               
-            </ul>
-        </div>
-        <!-- End .education-block -->
-    </div>
-    <!-- End #education -->
-
-    <div id="projects" class="background-alt">
-        <h2 class="heading">Projectos</h2>
-        <div class="container">
-            <div class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/wallhaven-60483.jpg" style="width:200px;height:200px;"/>
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Tienda Virtual</h3>
-                        <p>
-                            Componentes de segunda mano (en proyección) </p>
-                        
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-<!--
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" />
-                    </div>
-                   --> <!-- End .project-image -->
-                    <!-- <div class="project-info">
-                        <h3>Project Name Here</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                        </p>
-                        <a href="#">View Project</a>
-                    </div>
-                 -->   <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-            </div>
-        </div>
-    </div>
-    <!-- End #projects -->
-
-    <div id="skills">
-        <h2 class="heading">Habilidades (Skills)</h2>
-        <ul>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>SQL</li>
-            <li>Mysql</li>
-           <li>jQuery</li>
-            <li>Java</li>
-             <li>Docker</li>
-		 <li>Java</li>
-		 <li>Spring (2 años)</li>
-            <!-- <li>Elixir</li>
-            <li>Java</li>
-            <li>C</li>
-            <li>C#</li>
-            <li>C++</li>
-            <li>Ruby on Rails</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>Ruby</li>
-            <li>Go</li>
-            <li>Node.js</li>
-            <li>AngularJs</li>
-            <li>React</li>
-            <li>Elixir</li>
-            <li>Java</li>
-            <li>C</li>
-            <li>C#</li>
-            <li>C++</li>
-            <li>Ruby on Rails</li> -->
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">INICIO</a></li>
+          <li><a href="#sobreMi">SOBRE MI</a></li>
+          <li><a href="#Experiencia">EXPERIENCIA</a></li>
+          <li><a href="#Educacion">EDUCACION</a></li>
+          <li><a href="#Habilidades">HABILIDADES</a></li>
+            <li><a href="#">CONTACTO</a></li>
         </ul>
+       <!-- <ul class="nav navbar-nav navbar-right">
+          <li><a href="join.html">Join us</a></li>
+          <li><a href="login.html">Login</a></li></ul>-->
+      </div>
+      <!--/.nav-collapse -->
     </div>
-    <!-- End #skills -->
+  </nav>
 
-    <div id="contact">
-        <h2>Contacto</h2>
-        <div id="contact-form">
-            <form method="POST" action="https://formspree.io/antonio.nicolau.b.23@gmail.com">
-                <input type="hidden" name="_subject" value="Contact request from personal website" />
-                <input type="email" name="_replyto" placeholder="Your email" required>
-                <textarea name="message" placeholder="Your message" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
-        <!-- End #contact-form -->
+  <div class="container" role="main" >
+    <!-- Main jumbotron -->
+    <div class="jumbotron" style="border:3px solid lime;border-radius: 6px;background-color: lightgrey;color:#000;">
+      <h1 class="text-center" style="color:#000;">ANTONIO NICOLAU BATLE</h1>
+      <h2 class="text-center" style="color:#000;">&nbsp;FullStack FrontEnd & BackEnD &nbsp;</h2>
+      <h3 class="text-center" style="color:#000;">&nbsp; · INFORM&Aacute;TICO · &nbsp;</h3>
+        <h4 class="text-center" style="color:#000;">&nbsp; * * *  &nbsp;</h4>
     </div>
-    <!-- End #contact -->
+  </div>
+  <div class="container" >
+    <div class="row">
+      <div class="col-md-6">
+	<a href="img/fire2.png"><img width="82%" src="img/pro.jpg" style="border:3.5px solid lime;border-radius: 6px;" /></a><br />
+  <br>
+       <a name="Educacion"> <h3 >TITULACIÓN ACAD&Eacute;MICA</h3></a>
+        <hr>
+        <p><table class="table table-responsive">
+          <thead ><tbody><tr><td>AÑO</td><td>LUGAR</td><td>TITULACIÓN</td></tr></tbody></thead>
+          <tr><td>· 2001 · </td><td>San Vicente de Paul</td><td>Educaci&oacute;n Secundaria</td></tr>
+           <tr><td>· 2005 ·</td><td>Escuela Universitaria de Turismo Felipe Moreno</td><td>Especialidad TCP (Tripulante de Cabina de Pasajeros) </td></tr>
+            <tr><td>· 2015 ·</td><td>IES Emili Darder</td><td>FP Grado Medio Sistemas Microinformáticos y Redes</td></tr>
+             <tr><td>· 2019 ·</td><td>IES Emili Darder</td><td>FP Grado Superior en Sistemas Microinformáticos y Redes</td></tr>
+              
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-5 copyright">
-                    <p>
-                        Copyright &copy; 2019 - Antonio Nicolau Batle - Last Update : 13/11/2019 &copy;
-                    </p>
-                </div>
-                <div class="col-sm-2 top">
-                    <span id="to-top">
-                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                    </span>
-                </div>
-                <div class="col-sm-5 social">
-                    <ul>
-                        <li>
-                            <a href="https://github.com/anb00" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        </li>
-                       <!--  <li>
-                            <a href="https://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
-                        </li> -->
-                       <li>
-                            <a href="https://www.linkedin.com/in/antonio-nicolau-batle-588538175/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li> 
-                        <li>
-                            <a href="https://www.facebook.com/toni.thebest" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        </li>
-                       <li>
-                            <a href="https://fullstackanb.wordpress.com" target="_blank"><i class="fa fa-wordpress" aria-hidden="true"></i></a>
-                        </li> 
-                        <li>
-                            <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
-                </div>
+        </table></p>
+        <p><h3>SERVICIOS</h3>
+          <hr>
+          <div class="row">
+          <div class="col-sm-4" style="display: inline-flex;">
+            <div class="card" style="margin-left: 5px;border:3px solid black;border-radius:5px;background-color: lightblue;color:#000;"><img src="img/wp3.jpg" style="width: 180px;height: 180px;"/> 
+<h6 style="text-align: center;">Asesoramiento Informático</h6>
             </div>
-        </div>
-    </footer>
-    <!-- End footer -->
+            <br>
+            <div class="card" style="margin-left: 5px;border:3px solid black;border-radius:5px;background-color: lightblue;color:#000;"><img src="img/img_0028-1.jpg" style="width: 180px;height: 180px;"/> 
+<h6 style="text-align: center;">Disponibilidad Horaria</h6>
+            </div>
+            <br>
+             <div class="card" style="margin-left: 5px;border:3px solid black;border-radius:5px;background-color: lightblue;color:#000;"><img src="img/wp12.jpg" style="width: 180px;height: 180px;"/> 
+<h6 style="text-align: center;">An&aacute;lisis de redes</h6>
+            </div> 
+          
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/scripts.min.js"></script>
+
+          
+            <br>
+          
+          <!--<img src="img/wp3.jpg" style="width: 110px;height: 110px">
+          <br>
+          <h6 style="position: relative;">Asesoramiento Informático</h6>
+          <img src="img/wp3.jpg" style="width: 110px;height: 110px">
+          <h6>Asesoramiento Informático</h6>
+          <img src="img/wp3.jpg" style="width: 110px;height:110px">
+          <h6>Asesoramiento Informático</h6> -->
+        </div>
+       
+        </div>
+        <div class="row">
+
+<div class="col-sm-4" style="display: inline-flex;">
+<div class="card" style="margin-top:5px;margin-left: 5px;border:3px solid black;border-radius:5px;background-color: lightblue;color:#000;"><img src="img/xxao8565.jpg" style="width: 180px;height: 180px;"/> 
+<h6 style="text-align: center;">Wordpress</h6>
+            </div>
+            <div class="card" style="margin-top:5px;margin-left: 5px;border:3px solid black;border-radius:5px;background-color: lightblue;color:#000;"><img src="img/ahru4157.jpg" style="width: 180px;height: 180px;"/> 
+<h6 style="text-align: center;">Otras Tecnologias</h6>
+            </div>
+
+</div>
+        </div>
+
+      </div>
+      <div class="col-md-6">
+        <a name="sobreMi"><h3>SOBRE MI</h3></a>
+	<hr>
+        <p>
+        
+
+Hola, Me llamo Toni Nicolau Batle diseño y desarrollo páginas web, Me estoy especializando para ello, para pequeñas empresas o particulares, desde 0 , wordpress, drupal , páginas web a medida. También disponible para Asesoramiento Informático. Tienes el formulario de contacto al final de este Resumen.
+</p>
+        <br>
+        <br>
+        <a name="Experiencia"><h3 style="text-align: center;">EXPERIENCIA PROFESIONAL</h3></a>
+        <!-- September 2015 – September 2016
+PC BOX
+Vendedor ,Atención al Cliente
+
+Comprende las competencias de venta al público de componentes Informáticos así como la detección y sustitución de componentes y equipos informáticos preparación de presupuesto, pedidos ,etc...
+Agosto 2019 – Octubre 2019
+Sprinde SOLUCIONES INFORMÁTICAS Y DESARROLLO
+-Técnico en sistemas Informáticos Y REdes -
+
+Funciones: Analizar redes informáticas para asimilar posibles fallos o mejoras, Solventar problemas de clientes externos , Montaje de redes cableadas y no cableadas wifi, Cámaras de Seguridad, entre otras tareas Informáticas. -
+
+-->
+        <hr>
+   <p>Me especializo en Diseño web, Maquetación y programar el BackEnd Como el FrontEnd. Si no dispongo de la tecnología que solicitas, tengo recursos para poder realizar el servicio en otras tecnologias . También servicio Técnico Informático (Reparaciones(Fix), Instalaciones , Soporte,Etc.. )</p>
+        <center><img src="img/wp2.jpg" style="width: 290px;height: 290px;border:3px solid black;border-radius: 5px;"></center>
+        <br>
+        <table class="table table-responsive">
+          <tr><thead><tbody><td>Año</td><td>Empresa</td><td>Funciones</td></tbody></thead></tr>
+          <tr><td>September 2015 – September 2016</td><td>PC BOX</td><td>Comprende las competencias de venta al público de componentes Informáticos así como la detección y sustitución de componentes y equipos informáticos preparación de presupuesto, pedidos ,etc...</td></tr>
+           <tr><td>Agosto 2019 – Octubre 2019</td><td>Sprinde SOLUCIONES INFORMÁTICAS Y DESARROLLO</td><td>Funciones: Analizar redes informáticas para asimilar posibles fallos o mejoras, Solventar problemas de clientes externos , Montaje de redes cableadas y no cableadas wifi, Cámaras de Seguridad, entre otras tareas Informáticas. </td></tr>
+            
+
+        </table>
+     
+      </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+   <!-- <div class="col-md-1">
+         <h3>EDUCACIÓN</h3>
+        <table>
+          <tr><td>asdads</td><td>asdadsasdads</td><td>asdadsasdads</td></tr>
+           <tr><td>asdads</td><td>asdadsasdads</td><td>asdadsasdads</td></tr>
+            <tr><td>asdads</td><td>asdadsasdads</td><td>asdadsasdads</td></tr>
+             <tr><td>asdads</td><td>asdadsasdads</td><td>asdadsasdads</td></tr>
+              <tr><td>asdads</td><td>asdadsasdads</td><td>asdadsasdads</td></tr>
+               <tr><td>asdads</td><td>asdadsasdads</td><td>asdadsasdads</td></tr>
+
+        </table>
+    </div> -->
+     <div class="col-md-6">
+
+<div class="jumbotron" style="border:3px solid lime;background-color: lightgrey;color:  #000;">
+ <a name="Habilidades"><h3 style="text-align: center;">HABILIDADES</h3></a>
+</div>
+<ul class="responsive " >
+          <li class="god" >ORACLE DATABASE</li>
+          <li class="god">JAVA</li>
+          <li class="god">Spring Framework</li>
+          <li class="god">Bootstrap Framework</li>
+          <li class="god">Windows Server</li>
+          <li class="god">Linux Server</li>
+          <li class="god">MYSQL</li>
+          <li class="god">POSTGRES</li>
+        
+          <li class="god">WIRELESS</li>
+         
+          <li class="god">NETWORKING</li>
+          <li class="god">OFFICE</li>
+          <li class="god">MAVEN</li>
+        </ul>
+  </div>
+  </div>
+</div>
+
+
+
+  <!-- footer -->
+  <footer class="footer">
+    
+          <p class="text-danger" style="text-align: center;">CopyRight (C) Antonio Nicolau Batle</p>
+      
+
+
+      
+       
+      
+  </footer>
+  
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
